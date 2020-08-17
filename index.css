@@ -1,0 +1,43 @@
+.body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    height: 30%;
+    width: 100%;
+    background-color: rgb(27, 22, 22);
+}
+.clock{
+    width: 100%;
+    text-align: center;
+    line-height: 30vh;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+.content{
+    position: relative;
+    background-color: cornsilk;
+    margin: 3% 0;
+    width: 100%;
+    height: 10%;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 2rem;
+}
+.task{
+    top: 20%;
+    position: absolute;
+    left: 5%;
+}
+.time{
+    top: 20%;
+    position: absolute;
+    right: 15%;
+}
+.delete{
+    top: 30%;
+    position: absolute;
+    right: 2%;
+}
