@@ -3,6 +3,8 @@ var tasks= document.querySelector(".tasks");
 var startMsg=document.querySelector(".start");
 var date;
 var hours, minutes, seconds;
+var sound=new Audio();
+sound.src='alarm.mp3'
 
 function getTime(){
     date= new Date();
@@ -32,7 +34,7 @@ function gettingTime(){
 
     clock.innerHTML="<h1>"+clockTime+"</h1>";
 
-    if((hours==11 || hours == 14 || hours==17 || hours== 19 || hours==00 )&& minutes==00 && seconds==00)
+    if((hours==11 || hours == 14 || hours==17 || hours== 19 || hours==00 || hours==13)&& (minutes==00 || minutes==20) && seconds==00)
         fitness();
 
 }
@@ -49,8 +51,9 @@ function waterAlert(){
         tasks.innerHTML+=`<div class="content">
         <span class="task">HYDRATE YOUR BODY</span><span class="time">${hours}:${minutes}:${seconds}</span><i class='fa fa-trash delete' aria-hidden='true'></i>
         </div>`;
+        sound.play();
         waterAlert(); 
-    }, 3600000);
+    }, 120000);
 }
 waterAlert();
 
