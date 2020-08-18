@@ -53,7 +53,7 @@ function waterAlert(){
         </div>`;
         sound.play();
         waterAlert(); 
-    }, 120000);
+    }, 3600000);
 }
 waterAlert();
 
